@@ -26,6 +26,18 @@ const sendOtp = async (phoneNumber, otpCode) => {
     return response.data;
   } catch (error) {
     console.error('Error sending OTP:', error.response?.data || error.message );
+        if (
+      error.code === 'ETIMEDOUT' ||
+      error.message?.includes('timeout') ||
+      error.message?.includes('connect') ||
+      error.message?.includes('AggregateError')
+    ) {
+      // Simulate a failed response with SMS BALANCE UNAVAILABLE
+      return {
+        status: 'FAILED',
+        message: 'SMS BALANCE UNAVAILABLE',
+      };
+    }
     throw error;
   }
 };
