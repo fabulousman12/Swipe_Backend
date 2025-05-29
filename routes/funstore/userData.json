@@ -1,0 +1,12 @@
+{
+  "publicIp": "::ffff:127.0.0.1",
+  "privateIp": "::ffff:127.0.0.1",
+  "cookies": {
+    "localauth": "localapi7369f005d86d3d55:",
+    "isNotIncognito": "true",
+    "_ga": "GA1.1.7ec51c4cd47fee11966d505a657c22de",
+    "_ga_Z28525QR15": "GS1.1.1726673030.1.1.1726673103.0.0.0",
+    "_ga_699NE13B0K": "GS1.1.1727546968.1.1.1727547056.0.0.0",
+    "mp_844407e91b119d6a00359efeff26eaa4_mixpanel": "{\"distinct_id\": \"$device:191dc575043d57-0f050630263697-26001151-1fa400-191dc575044d58\",\"$device_id\": \"191dc575043d57-0f050630263697-26001151-1fa400-191dc575044d58\",\"$initial_referrer\": \"$direct\",\"$initial_referring_domain\": \"$direct\",\"__mps\": {},\"__mpso\": {\"$initial_referrer\": \"$direct\",\"$initial_referring_domain\": \"$direct\"},\"__mpus\": {},\"__mpa\": {},\"__mpu\": {},\"__mpr\": [],\"__mpap\": []}"
+  }
+}

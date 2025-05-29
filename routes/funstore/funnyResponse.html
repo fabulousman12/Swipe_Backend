@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funny Response</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      text-align: center;
+      padding: 50px;
+    }
+
+    h1 {
+      color: #ff6347;
+      font-size: 4em;
+      text-shadow: 2px 2px #ffa07a;
+    }
+
+    .fun-box {
+      display: inline-block;
+      padding: 30px;
+      border: 3px solid #ff4500;
+      border-radius: 20px;
+      background: #fffacd;
+      box-shadow: 10px 10px 0px #ffb6c1;
+    }
+
+    p {
+      font-size: 1.2em;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 15px 30px;
+      margin-top: 30px;
+      background-color: #ff4500;
+      color: white;
+      font-size: 1.5em;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #ff6347;
+    }
+
+    .cookie-alert {
+      color: #ff1493;
+      font-size: 1.5em;
+      margin-top: 20px;
+    }
+
+    .ip-info {
+      font-size: 1.5em;
+      margin-top: 20px;
+      color: #4682b4;
+    }
+
+    .client-ip {
+      font-size: 1.5em;
+      color: #008080;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="fun-box">
+    <h1>Surprise!</h1>
+    <p>Welcome to the land of cookies and IP addresses! 😎🍪</p>
+    <p>Your browser was kind enough to bring these:</p>
+
+    <div class="cookie-alert">Cookie Monster is impressed! 🍪</div>
+    <div class="ip-info">And your IP? Well, we've noted that down for future LOLs. 😏</div>
+
+    <!-- Placeholder for client IP -->
+    <div class="client-ip">Your IP Address: <span id="client-ip">Fetching...</span></div>
+
+    <a class="button" href="/">Take me back!</a>
+  </div>
+
+  <script>
+    // Fetch client IP from an external API (e.g., ipify)
+    fetch('https://api.ipify.org?format=json')
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById('client-ip').textContent = data.ip;
+      })
+      .catch(error => {
+        document.getElementById('client-ip').textContent = "Unable to fetch IP 😢";
+        console.error('Error fetching IP:', error);
+      });
+  </script>
+</body>
+</html>

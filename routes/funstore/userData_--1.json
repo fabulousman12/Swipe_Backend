@@ -1,0 +1,7 @@
+{
+  "publicIp": "::1",
+  "privateIp": "::1",
+  "cookies": {
+    "mp_844407e91b119d6a00359efeff26eaa4_mixpanel": "{\"distinct_id\": \"$device:193efc6153310ca-02ee9f7f4668ff-26011851-1fa400-193efc6153310cb\",\"$device_id\": \"193efc6153310ca-02ee9f7f4668ff-26011851-1fa400-193efc6153310cb\",\"$initial_referrer\": \"http://localhost:8100/\",\"$initial_referring_domain\": \"localhost:8100\",\"__mps\": {},\"__mpso\": {\"$initial_referrer\": \"http://localhost:8100/\",\"$initial_referring_domain\": \"localhost:8100\"},\"__mpus\": {},\"__mpa\": {},\"__mpu\": {},\"__mpr\": [],\"__mpap\": []}"
+  }
+}

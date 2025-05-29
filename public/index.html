@@ -1,0 +1,82 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChatAPP Backend</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #4CAF50;
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.2rem;
+      color: #555;
+    }
+    .highlight {
+      color: #FF5722;
+      font-weight: bold;
+    }
+    .fun-fact {
+      margin-top: 40px;
+      font-size: 1.1rem;
+      background-color: #ffecb3;
+      padding: 20px;
+      border-radius: 8px;
+      display: inline-block;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .fun-fact span {
+      color: #03A9F4;
+      font-weight: bold;
+    }
+    .button {
+      margin-top: 30px;
+      padding: 10px 20px;
+      background-color: #03A9F4;
+      color: white;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .button:hover {
+      background-color: #0288D1;
+    }
+    footer {
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to the <span class="highlight">Conversa Backend</span>!</h1>
+  <p>You've stumbled upon the brainy side of things. This is where the magic happens.</p>
+  <p>No shiny buttons or fun distractions here, just some serious <span class="highlight">Messaging</span> business going on.</p>
+
+  <div class="fun-fact">
+    <p>Fun fact: If you were looking for a fancy app with buttons and features, you're in the wrong place. <span>We handle the backend</span>, so you don't have to!</p>
+  </div>
+
+  <!-- Button to private logs -->
+  <a href="/private/logs" class="button">View Logs</a>
+  <a href="/private/funfact" class="button">View data</a>
+
+  <footer>
+    <p>🚀 Powered by Node.js, Express, MongoDB, and some WebSocket wizardry also mysql and sokectio.</p>
+    <p>Need the App? Go ask the developers!</p>
+  </footer>
+</body>
+</html>
